@@ -19,7 +19,7 @@ This file creates a task in windows task scheduler to run downloader.exe daily 2
 
 Note
 - Internet connection will be required to download images.
-- You have to remove/delete images yourself to limit number images.
+- You have to remove/delete images yourself to limit number of images.
 - To remove this setup, you can delete the task(name-"Wallpaper_Downloader") in task scheduler.
 
 ***Any suggestions are welcomed.***
