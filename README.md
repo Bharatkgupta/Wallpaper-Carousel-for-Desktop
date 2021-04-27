@@ -17,4 +17,4 @@ This file downloads bing image of the day and places it in the folder containing
 ### setup.exe
 This file creates a task in windows task scheduler to run downloader.exe daily.
 
-***Any suggestion are welcomed.***
+***Any suggestions are welcomed.***
