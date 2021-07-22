@@ -2,6 +2,8 @@ import datetime as dt
 import win32com.client
 import os
 
+Path = input("Enter Python PATH(location of python.exe ex. 'C:\Program Files\Python39\python.exe')\n-> ")
+
 #Connection to Task Scheduler
 task = win32com.client.Dispatch('Schedule.Service')
 task.Connect()
@@ -20,7 +22,9 @@ trigger.StartBoundary = start_boundary
 TASK_ACTION_EXEC = 0
 action = newtask.Actions.Create(TASK_ACTION_EXEC)
 dir_path = os.getcwd()
-action.Path = os.path.abspath(os.path.join(dir_path,"downloader.exe"))
+action.Path = Path
+action.Arguments = "downloader.py"
+action.WorkingDirectory = os.getcwd()
 
 # Parameters
 newtask.RegistrationInfo.Author = "Bharat Kumar Gupta"
