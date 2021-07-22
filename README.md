@@ -1,5 +1,5 @@
 # Wallpaper-Carousel-for-Desktop
-Automatically downloads Bing Image of the day daily.
+Automatically downloads 'Bing Image of the day' daily.
 
 Requiremrnt: Python 3.X
 
